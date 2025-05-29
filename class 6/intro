@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+</head>
+<body>
+<h1>personal details form</h1>
+        <form name="form 1">
+            <label>name<label>
+                <fieldset>
+             <legend>personal detail</legend>
+                <input type="email"><br><br> 
+                <label>password<label>
+                <input type="password"><br><br>
+                <label>email</label><br>
+                    <input type="radio"  name="gender">male<br>
+                    <input type="radio"  name="gender">female<br>
+                    <label>hobbies</label><br><br>
+                    <input type="checkbox"name=hobies>drawing<br>
+                    <input type="checkbox"name=hobies>surfing<br>
+<input type="checkbox"name=hobies>Gardenig<br>
+<br>
+<input type="date">
+<input type="submit">
+<body>
+    <html>
