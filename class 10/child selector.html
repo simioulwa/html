@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>advance selectors</title>
+        <style>
+            /* atribute selector */
+            input[type=text]{
+            
+            border: 2px soild red;}
+            
+            /* child selector */
+            ul>li{
+            color:brown;
+            }
+            h1+p{
+           color:aqua;
+           font-size:24px
+        }
+        a:hover{
+            color:red;
+            font-size: 24px;
+
+        }
+        li:nth-child(3){
+            background-color: blue;
+        }
+        ul>li::before{
+            content:"🚀";
+        }
+        p::first-letter{
+            font-size: 150%;
+            color:orange;
+        }
+        </style>
+        <body>
+            <input type="text">
+            <h1>space exploration</h1>
+            <ul>
+            <li>space mission</li>
+            <li>satlite</li>
+            <li>mars mission</li>
+            <li>telescope</li>
+                </ul>
+                <h1>satelite</h1>
+                <P>A satellite is an object that orbits around a planet or star. There are two main types: natural satellites, like the Moon, and artificial satellites, which are man-made and launched into space. Artificial satellites are used for communication, weather monitoring, GPS, scientific research, and even spying. They travel in different orbits depending on their purpose, such as low Earth orbit for imaging or geostationary orbit for constant communication coverage. Satellites have become essential to modern life, quietly supporting everything from phone calls to internet and television.
+</P>
+                <p>A satellite is a device placed in orbit around Earth or another celestial body to collect and send information. It can be used for many purposes, such as tracking weather patterns, enabling GPS navigation, broadcasting TV signals, or supporting scientific missions. Some satellites take pictures of Earth to help monitor the environment, while others explore deep space. They orbit at different heights and speeds depending on their job, and many work together in networks to provide global coverage.
+</p> 
+ <a href="#">space</a>
+
+            </body>
+    </head>
+</html>
