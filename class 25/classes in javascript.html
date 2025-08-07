@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            static methods
+        </title>
+    </head>
+    <body>
+       <!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            static methods
+        </title>
+    </head>
+    <body>
+        <h1>classes</h1>
+        <div id="result"></div>
+        <div id="result1"></div>
+
+        <script>
+            class Student {
+                constructor(name, year) {
+                    this.name = name;
+                    this.year = year;
+                }
+
+                age() {
+                    const dt = new Date();
+                    const currentYear = dt.getFullYear();
+                    const myage = currentYear - this.year;
+                    document.getElementById("result").innerHTML = "My name is " + this.name;
+                    document.getElementById("result1").innerHTML = "My age is " + myage;
+                }
+            }
+
+            // Create a new student and display result
+            const stu = new Student("Simi", 2008);
+            stu.age();
+        </script>
+    </body>
+</html>
