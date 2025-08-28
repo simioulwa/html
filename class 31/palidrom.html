@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>palidrome</title>
+        </head>
+        <style>
+            body{
+                background-color: black;
+                color: aliceblue;
+                text-align: center;
+            }
+            h1{
+                font-size: 42px;
+                color: darkgoldenrod;
+            }
+            h1::after{
+                content: 🎉;
+            }
+            h1::before{
+                content: 🎉;
+            }
+            civ{
+                display:inline-block;
+                width: 300px;
+                background-color: ;
+            }
+        </style>
+        <body></body>
+        <h1>palidrome App</h1>
+        <div id="result"></div>
+        <script>
+        function palidrome(mystring){
+                var input = mystring.replace(/[^a-z0-9]/ig,"").toLowerCase()
+             var revinput = input.split("").reverse().join("") 
+             if (input == revinput)  {      
+        document.getElementById("result").innerHTML =input +"is a palidrone"
+        } 
+            else{
+                docunment.getElementById("result").innerHTML = input + "not a palidrome"
+            }
+        } 
+            palidrome("mysring")
+        </script>
