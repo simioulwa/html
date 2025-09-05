@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>stop watch</h3>
+        <div id = "wrapper">
+            <span id = "second">0</span>:<span id = "seconds">00</span>
+            <br><br>
+            <button id = "start">start</button>
+             <button id = "stop">stop</button>
+              <button id = "reset">rest</button>
+        
+              <script>
+                function starttimer(){
+                    var appendseconds = document.getElementById("seconds")
+            }
+ var appendmilliseconds = document.getElementById("milliseconds")
+  var startb = document.getElementById("start")
+   var stopb = document.getElementById("stop")
+    var resetb = document.getElementById("reset")
+    var interval;
+     startb.onclick = function(){
+        clearinterval(interval)
+        interval = setinterval(starttimer,10)
+                }
+                stopb.onclick = function(){
+                    clearinterval(interval)
+                }
+                resetb.onclick = function(){
+                    clearintervals(interval)
+                    milliseconds = "00"
+                    seconds = "00"
+                   appendseconds.innerHTML = "00" 
+                   appendmilliseconds.innerHTML = "00"
+                }
+                function starttimer()
+                {
+                    milliseconds++;
+                    if (milliseconds<=9)
+                }
+            appendmilliseconds.innerHTML = "0"+milliseconds;
+            {
+                if (milliseconda>9)
+            }
+             appendmilliseconds.innerHTML = milliseconds;
+            {
+                if (millisecomds>99)
+            }
+        seconds++
+        appendsseconds.innerHTML = "0"+ milliseconda;
+        milliseconds = 0
+        appendmilliseconds.innerHTML = "0"+ milliseconds;
+        {
+            if (seconds >9){
+                appends.innerHTML = seconds;
+            }
+        }
+              </script>
+        </div>
+    </body>
