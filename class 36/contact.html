@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body{
+            margin:0px;
+            font-family: georgia , 'times new roman', 'Times New Roman', Times, serif;
+            background-color : blanchedalmon;
+            text-align: center;
+        }
+        .topnav{
+            background-color: black;
+            overflow: hidden;
+        }
+        .topnav a{
+            float : right;
+            color :pink;
+          font-size: 20px;
+          padding : 12px 18px ; 
+          text-decoration: none;
+        }
+        .topnav a.active{
+            background-color: goldenrod;
+            color: black;
+        }
+        .topnav a:hover{
+            color: darkorchid;
+            font-size: 23px;
+        }
+        .contactne{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color : rgb(29, 166, 166, 0.4);
+        width: 400px;
+        padding: 20px;
+         text-align: center;
+        border : 5px soild ravy;
+        border-radius:24px; 
+        }
+        h1{
+        text-align: center;
+        color:navy;
+        }
+        h1::before{
+            content: "❤️";
+        }
+        h1::after{
+            content: "❤️";
+        }
+        </style>
+        <body>
+            <div class = "topnav">
+                <a href = "navigationbar.html">home</a>
+                <a href = "about.html"  >about</a>
+                <a href = "gallery.html"  >gallery</a>
+                <a href = "contact.html"class = "active"  >contact us</a>
+            </div>
+           <div class="contactne">
+            <form name = "contactform">
+                <h1>CONTACT FORM</h1>
+                <label for = "fname">
+                    firstname
+                </label>
+                <input type="text"><br><br>
+                <label for="query">
+                    Quries
+                </label>
+                <textarea name="query" rows= 10, colums=100></textarea><br><br>
+                <input type="submit">
+            </form>
+           </div>
+        
+        </body>
+    </head>
+</html>
